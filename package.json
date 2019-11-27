@@ -1,5 +1,5 @@
 {
-	"name": "redoc-viewer",
+	"name": "vs-redoc-viewer",
 	"displayName": "ReDoc Viewer",
 	"description": "reDoc view lets you preview and validate OpenAPI files as you type in Visual Studio Code.",
 	"version": "0.0.1",
@@ -102,5 +102,9 @@
 		"express": "^4.17.1",
 		"js-yaml": "^3.13.1",
 		"socket.io": "^2.3.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/atifkhan161/vs-redoc-viewer.git"
 	}
 }
