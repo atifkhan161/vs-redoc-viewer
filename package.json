@@ -2,7 +2,8 @@
   "name": "vs-redoc-viewer",
   "displayName": "ReDoc Viewer",
   "description": "reDoc viewer lets you preview and validate OpenAPI files as you type in Visual Studio Code.",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "icon": "static/images/logo.png",
   "publisher": "Atif",
   "engines": {
     "vscode": "^1.40.0"
