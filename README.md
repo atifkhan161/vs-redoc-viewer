@@ -7,5 +7,5 @@ It works on files in json and yaml format. Preview and validation happens in rea
 ## Preview
 
 To  start
-* Open the swagger file and press F1.
+* Open the yaml/json file and press F1.
 * Run the Command `Redoc Viewer`.
