@@ -1,110 +1,110 @@
 {
-	"name": "vs-redoc-viewer",
-	"displayName": "ReDoc Viewer",
-	"description": "reDoc viewer lets you preview and validate OpenAPI files as you type in Visual Studio Code.",
-	"version": "0.0.1",
-	"publisher": "Atif",
-	"engines": {
-		"vscode": "^1.40.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.reDocViewer",
-		"onLanguage:yaml",
-		"onLanguage:json",
-		"onLanguage:plaintext"
-	],
-	"keywords": [
-		"redoc",
-		"swagger",
-		"openapi",
-		"api",
-		"api documentation",
-		"json",
-		"yaml"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.reDocViewer",
-				"title": "ReDoc Viewer"
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"pretest": "npm run compile",
-		"test": "node ./out/test/runTest.js"
-	},
-	"configuration": {
-		"type": "object",
-		"title": "Redoc Viewer Configuration",
-		"properties": {
-			"reDocViewer.defaultHost": {
-				"type": "string",
-				"default": "localhost",
-				"description": "Default host in which the preview should be opened."
-			},
-			"reDocViewer.defaultPort": {
-				"type": "integer",
-				"default": 9093,
-				"description": "Default port in which the preview should be opened."
-			}
-		}
-	},
-	"keybindings": [
-		{
-			"command": "extension.reDocViewer",
-			"key": "shift+alt+r",
-			"mac": "shift+alt+r",
-			"when": "editorTextFocus"
-		}
-	],
-	"menus": {
-		"explorer/context": [
-			{
-				"when": "resourceLangId == json",
-				"command": "extension.reDocViewer",
-				"group": "reDocViewer"
-			},
-			{
-				"when": "resourceLangId == yaml",
-				"command": "extension.reDocViewer",
-				"group": "reDocViewer"
-			},
-			{
-				"when": "resourceLangId == yml",
-				"command": "extension.reDocViewer",
-				"group": "reDocViewer"
-			}
-		]
-	},
-	"devDependencies": {
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^5.2.7",
-		"@types/node": "^12.11.7",
-		"@types/vscode": "^1.40.0",
-		"glob": "^7.1.5",
-		"mocha": "^6.2.2",
-		"typescript": "^3.6.4",
-		"tslint": "^5.20.0",
-		"vscode-test": "^1.2.2"
-	},
-	"dependencies": {
-		"@types/express": "^4.17.2",
-		"@types/js-yaml": "^3.12.1",
-		"@types/socket.io": "^2.1.4",
-		"express": "^4.17.1",
-		"js-yaml": "^3.13.1",
-		"socket.io": "^2.3.0"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/atifkhan161/vs-redoc-viewer.git"
-	}
+  "name": "vs-redoc-viewer",
+  "displayName": "ReDoc Viewer",
+  "description": "reDoc viewer lets you preview and validate OpenAPI files as you type in Visual Studio Code.",
+  "version": "0.0.2",
+  "publisher": "Atif",
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.reDocViewer",
+    "onLanguage:yaml",
+    "onLanguage:json",
+    "onLanguage:plaintext"
+  ],
+  "keywords": [
+    "redoc",
+    "swagger",
+    "openapi",
+    "api",
+    "api documentation",
+    "json",
+    "yaml"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.reDocViewer",
+        "title": "ReDoc Viewer"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "configuration": {
+    "type": "object",
+    "title": "Redoc Viewer Configuration",
+    "properties": {
+      "reDocViewer.defaultHost": {
+        "type": "string",
+        "default": "localhost",
+        "description": "Default host in which the preview should be opened."
+      },
+      "reDocViewer.defaultPort": {
+        "type": "integer",
+        "default": 9093,
+        "description": "Default port in which the preview should be opened."
+      }
+    }
+  },
+  "keybindings": [
+    {
+      "command": "extension.reDocViewer",
+      "key": "shift+alt+r",
+      "mac": "shift+alt+r",
+      "when": "editorTextFocus"
+    }
+  ],
+  "menus": {
+    "explorer/context": [
+      {
+        "when": "resourceLangId == json",
+        "command": "extension.reDocViewer",
+        "group": "reDocViewer"
+      },
+      {
+        "when": "resourceLangId == yaml",
+        "command": "extension.reDocViewer",
+        "group": "reDocViewer"
+      },
+      {
+        "when": "resourceLangId == yml",
+        "command": "extension.reDocViewer",
+        "group": "reDocViewer"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.40.0",
+    "glob": "^7.1.5",
+    "mocha": "^6.2.2",
+    "typescript": "^3.6.4",
+    "tslint": "^5.20.0",
+    "vscode-test": "^1.2.2"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "@types/js-yaml": "^3.12.1",
+    "@types/socket.io": "^2.1.4",
+    "express": "^4.17.1",
+    "js-yaml": "^3.13.1",
+    "socket.io": "^2.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atifkhan161/vs-redoc-viewer.git"
+  }
 }
